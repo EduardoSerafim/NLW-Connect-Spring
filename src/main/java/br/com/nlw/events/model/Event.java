@@ -17,7 +17,7 @@ public class Event {
     @Column(name = "title", length = 255, nullable = false )
     private String title;
 
-    @Column(name = "preety_name", length = 50, nullable = false, unique = true )
+    @Column(name = "pretty_name", length = 50, nullable = false, unique = true )
     private String prettyName;
 
     @Column(name = "location", length = 255, nullable = false)

@@ -22,7 +22,7 @@ public class EventService {
         return (List<Event>) eventRepo.findAll();
     }
 
-    public Event getByPreetyName(String preetyName){
-        return eventRepo.findByPreetyName(preetyName);
+    public Event getByPrettyName(String preetyName){
+        return eventRepo.findByPrettyName(preetyName);
     }
 }
