@@ -63,7 +63,7 @@ public class SubscriptionService {
     public List<SubscriptionRankingItem> getCompleteRanking(String prettyName){
         Event evt = eventRepo.findByPrettyName(prettyName);
         if(evt == null){
-            throw new EventNotFoundException("Ranking do evento " + prettyName + " não exite");
+            throw new EventNotFoundException("Ranking do evento " + prettyName + " não existe");
         }
         return subscriptionRepo.generateRanking(evt.getEventId());
     }
